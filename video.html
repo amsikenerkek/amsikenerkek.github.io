@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-       document.addEventListener("DOMContentLoaded", function() {
-          var video = document.getElementById("myVideo");
-          $("#playButton").click(function(){
-              video.play();
-          });
-       });
-    </script>
-  </head>
-  <body>
-    <video id="myVideo" width="320" height="240" controls>
-      <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-    </video>
-    <button id="playButton">Play</button>
-  </body>
+<html lang="en-GB">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+CiAgIDxzdHlsZT4KICAgICAgI3N0MS1jb2xvci0xIHsKICAgICAgICAgYW5pbWF0aW9uOiBzdDEtYy0xIDZzIGxpbmVhciBpbmZpbml0ZTsKICAgICAgICAgYW5pbWF0aW9uLWRlbGF5OiA1czsKICAgICAgfQogICAgICBAa2V5ZnJhbWVzIHN0MS1jLTEgewogICAgICAgICAwJSB7CiAgICAgICAgICAgIG9wYWNpdHk6IDE7CiAgICAgICAgIH0KICAgICAgICAgNTAlIHsKICAgICAgICAgICAgc3RvcC1jb2xvcjogIzUwQUM1NTsKICAgICAgICAgfQogICAgICAgICAxMDAlIHsKICAgICAgICAgICAgb3BhY2l0eTogMTsKICAgICAgICAgfQogICAgIH0KICAgICAgI3N0MS1jb2xvci0yIHsKICAgICAgICAgYW5pbWF0aW9uOiBzdDEtYy0yIDZzIGxpbmVhciBpbmZpbml0ZTsKICAgICAgICAgYW5pbWF0aW9uLWRlbGF5OiA1czsKICAgICAgfQogICAgICBAa2V5ZnJhbWVzIHN0MS1jLTIgewogICAgICAgICAwJSB7CiAgICAgICAgICAgIG9wYWNpdHk6IDE7CiAgICAgICAgIH0KICAgICAgICAgNTAlIHsKICAgICAgICAgICAgc3RvcC1jb2xvcjogI0NDQ0Y3MjsKICAgICAgICAgfQogICAgICAgICAxMDAlIHsKICAgICAgICAgICAgb3BhY2l0eTogMTsKICAgICAgICAgfQogICAgIH0KICAgPC9zdHlsZT4KICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic3QxIj4gCiAgICAgICAgIDxzdG9wIG9mZnNldD0iMCIgaWQ9InN0MS1jb2xvci0xIiBzdG9wLWNvbG9yPSIjNkFBRkU2Ii8+CiAgICAgICAgIDxzdG9wIG9mZnNldD0iMSIgaWQ9InN0MS1jb2xvci0yIiBzdG9wLWNvbG9yPSIjM0Q3MjgzIi8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgIDwvZGVmcz4KICAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNzdDEpIi8+Cjwvc3ZnPg==) 100% no-repeat;
+			}
+			header.header {
+				background: #2182D6;
+				width: 100%;
+				height: 90px;
+				filter: drop-shadow(2px 2px 2px black);
+				position: fixed;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<div class="logo" style="margin: 8px auto; width: 75px">
+				<a href="http://www.w3.org/2000/svg" style="display: grid">
+					<img src="oe.jpg" width="75px" style="border-radius: 50%; pointer-events: none">
+				</a>
+			</div>
+		</header>
+	</body>
 </html>
