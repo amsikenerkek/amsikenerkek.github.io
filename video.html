@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+          var video = document.getElementById("myVideo");
+          $("#playButton").click(function(){
+              video.play();
+          });
+       });
+    </script>
+  </head>
+  <body>
+    <video id="myVideo" width="320" height="240" controls>
+      <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <button id="playButton">Play</button>
+  </body>
+</html>
