@@ -1,56 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <style>
-      body {
-        background: #202020;
-        user-select: none;
-        font-family: roboto;
-        font-weight: bold;
-      }
-      h1 {
-        color: #fff;
-        text-align: center;
-      }
-  </style>
-  </head>
-  <body>
-    <h1>Counter</h1>
-    <br><br><br><br><br>
-    <script>
-      var counter = 0;
-      var counterElement = document.createElement('div');
-      document.body.appendChild(counterElement);
-      setInterval(function() {
-        counterElement.innerHTML = counter++;
-      }, 10);
-      counterElement.style.color = 'lime';
-      document.body.style.background = '#202020';
-      counterElement.style.textAlign = 'center';
-      counterElement.style.fontSize = '5rem';
-      counterElement.style.textAlign = 'center';
-      counterElement.style.position = 'absolute';
-      counterElement.style.top = '50%';
-      counterElement.style.left = '50%';
-      counterElement.style.transform = 'translate(-50%, -50%)';
-      counterElement.style.fontSize = '8rem';
-      counterElement.style.userSelect = 'none';
-      counterElement.addEventListener('click', function() {
-        counterElement.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
-      });
-      counterElement.style.fontFamily = 'Roboto';
-      counterElement.style.fontWeight = 'bold';
-      counterElement.addEventListener('mousedown', function() {
-        counterElement.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
-      });
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', 'https://httpbin.org/post');
-      xhr.setRequestHeader('Content-Type', 'application/json');
-      xhr.send(JSON.stringify({
-        counter: counter
-      }));
-    </script>
-  </body>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr" xml:space="preserve">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="https://bit.ly/3kwA5Tz" type="text/css" />
+		<script src="https://bit.ly/3iWc3Rq" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo" style="margin: -10px auto; width: 110px">
+				<a href="https://amsikenerkek.github.io" style="display: grid">
+					<img src="https://bit.ly/3kvuFIl" width="110px" alt="ic.png" style="border-radius: 50%; pointer-events: none" />
+				</a>
+			</div>
+		</div>
+		
+		
+		<div class="article">
+			<div class="video">
+				<embed src="https://upcdn.io/FW25b2k/raw/875864722064-Efc1.mp4" width="100%" height="500px" type="video/mp4" />
+			</div>
+		</div>
+		
+		<noscript>
+			<meta http-equiv="refresh" content="0; url=https://amsikenerkek.github.io/noscript" />
+		</noscript>
+		
+	</body>
 </html>
