@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change Color</title>
+    <style>
+      #moon, #sun{
+        width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target">
+      <img id="moon" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/640-crescent-moon.svg">
+    </div>
+    <img id="sun" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Sun_icon.svg" style="display:none">
+    <script>
+        var target = document.querySelector("#target");
+        var moon = document.querySelector("#moon")
+        var sun = document.querySelector("#sun")
+        var body = document.querySelector("body")
+        target.addEventListener("click", function() {
+          if (body.style.backgroundColor === "white") {
+            body.style.backgroundColor = "black";
+            moon.style.display = "none";
+            sun.style.display = "block";
+          } else {
+            body.style.backgroundColor = "white";
+            moon.style.display = "block";
+            sun.style.display = "none";
+          }
+        });
+    </script>
+  </body>
+</html>
